@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Documents | MindMesh</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* PDF Container Specific Styles */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .pdf-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pdf-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+        }
+
+        .pdf-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--glow-blue);
+            filter: drop-shadow(0 0 10px var(--glow-blue));
+        }
+
+        .pdf-info h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--glow-blue);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+
+        .pdf-info p {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 25px;
+            min-height: 40px;
+            line-height: 1.4;
+        }
+
+        .view-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border: 1px solid var(--glow-blue);
+            border-radius: 50px;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.75rem;
+            transition: all 0.3s ease;
+            background: rgba(0, 255, 255, 0.05);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .view-btn:hover {
+            background: var(--glow-blue);
+            color: #000;
+            box-shadow: 0 0 20px var(--glow-blue);
+        }
+
+        .description-text {
+            color: var(--text-white);
+            max-width: 800px;
+            margin: 20px auto 40px 20px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">MINDMESH</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="activities.html">Activities</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="glow-card">
+            <h1 class="glow-text">IEEE Documents</h1>
+            <p class="description-text">
+                The Institute of Electrical and Electronics Engineers (IEEE) standards provide a structured framework for software engineering documentation. These documents ensure that every phase of the development lifecycle—from requirements gathering to final testing—is documented with precision, clarity, and technical consistency.
+            </p>
+        </div>
+
+        <div class="pdf-grid">
+            <div class="glow-card pdf-card">
+                <div class="pdf-icon">📂</div>
+                <div class="pdf-info">
+                    <h3>SDD</h3>
+                    <p>Software Design Description: Details the system architecture and data design.</p>
+                </div>
+                <a href="https://canva.link/kn8r34mypganovc" target="_blank" class="view-btn">View on Canva</a>
+            </div>
+
+            <div class="glow-card pdf-card">
+                <div class="pdf-icon">📋</div>
+                <div class="pdf-info">
+                    <h3>SRS</h3>
+                    <p>Software Requirements Specification: Defines the functional and non-functional requirements.</p>
+                </div>
+                <a href="https://canva.link/nyqg9ze39wl8cg4" target="_blank" class="view-btn">View on Canva</a>
+            </div>
+
+            <div class="glow-card pdf-card">
+                <div class="pdf-icon">📊</div>
+                <div class="pdf-info">
+                    <h3>SPMP</h3>
+                    <p>Software Project Management Plan: Outlines the project timeline, resources, and goals.</p>
+                </div>
+                <a href="https://canva.link/5ol1yj2ijcr7riz" target="_blank" class="view-btn">View on Canva</a>
+            </div>
+
+            <div class="glow-card pdf-card">
+                <div class="pdf-icon">🧪</div>
+                <div class="pdf-info">
+                    <h3>STD</h3>
+                    <p>Software Test Documentation: Logs the test cases, procedures, and quality reports.</p>
+                </div>
+                <a href="https://canva.link/ig4b3yopkc3qx81" target="_blank" class="view-btn">View on Canva</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; margin-bottom: 40px;">
+            <a href="activities.html" class="nav-btn">← Back to Activities</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

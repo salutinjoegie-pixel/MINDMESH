@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona Mapping | MindMesh</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Canva Link Section Styling */
+        .canva-section {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .canva-card {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            background: rgba(10, 10, 20, 0.6);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .canva-card:hover {
+            border-color: var(--glow-blue);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .link-meta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .canva-icon {
+            font-size: 2.5rem;
+            color: var(--glow-blue);
+            filter: drop-shadow(0 0 8px var(--glow-blue));
+        }
+
+        .link-text h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .link-text p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin: 5px 0 0 0;
+        }
+
+        .view-link {
+            padding: 12px 25px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid var(--glow-blue);
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.7rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .view-link:hover {
+            background: var(--glow-blue);
+            color: #000;
+            box-shadow: 0 0 15px var(--glow-blue);
+        }
+
+        .def-container {
+            border-left: 3px solid var(--glow-blue);
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">MINDMESH</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="activities.html">Activities</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="glow-card">
+            <h1 class="glow-text">Persona Mapping</h1>
+            <div class="def-container">
+                <p style="color: var(--text-white); font-size: 1.1rem; line-height: 1.7;">
+                    Persona Mapping is a strategic methodology used to create detailed profiles of our target users. By identifying their demographics, motivations, and technological pain points, we ensure that the ChurchSearch system is designed with empathy and precision, catering to the specific needs of church administrators and record-seekers alike.
+                </p>
+            </div>
+        </div>
+
+        <div class="canva-section">
+            <div class="canva-card">
+                <div class="link-meta">
+                    <div class="canva-icon">🎨</div>
+                    <div class="link-text">
+                        <h3>Interactive Persona</h3>
+                        <p>Visual Mapping on Canva</p>
+                    </div>
+                </div>
+                <a href="https://canva.link/nm8uexatlz4f35l" target="_blank" class="view-link">View on Canva</a>
+            </div>
+        </div>
+
+        <div class="glow-card">
+            <h2 class="glow-text">Lay's Reflection</h2>
+            <div class="member-layout" style="align-items: flex-start; gap: 30px; display: flex;">
+                <div class="portrait-box" style="width: 250px; height: 250px; flex-shrink: 0;">
+                    <img src="reflection_lay.jpg" alt="Lay Mae's Portrait" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                </div>
+                <div class="member-details">
+                    <p style="color: var(--text-white); font-style: italic; font-size: 1.1rem; line-height: 1.6;">
+                        "Developing a persona allowed me to gain a clearer understanding of a user’s needs, behaviors, and challenges. By outlining details like their age, goals, daily life, and struggles, I was able to view situations from their perspective instead of my own. During the process, I realized the importance of empathy in truly understanding people. It made me reflect on how individuals experience things differently and how their choices are shaped by their circumstances. This activity taught me that personas are valuable in planning and decision-making because they help create solutions that focus on the user."
+                    </p>
+                    <p style="margin-top: 15px; color: var(--glow-blue); font-family: 'Orbitron';">— Lay Mae (Hustler)</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; padding-bottom: 60px;">
+            <a href="activities.html" class="nav-btn">← Back to Activities</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

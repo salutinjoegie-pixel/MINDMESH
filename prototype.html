@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype | MindMesh</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Canva Link Section Styling */
+        .canva-section {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .canva-card {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            background: rgba(10, 10, 20, 0.6);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .canva-card:hover {
+            border-color: var(--glow-blue);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .link-meta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .canva-icon {
+            font-size: 2.5rem;
+            color: var(--glow-blue);
+            filter: drop-shadow(0 0 8px var(--glow-blue));
+        }
+
+        .link-text h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .link-text p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin: 5px 0 0 0;
+        }
+
+        .view-link {
+            padding: 12px 25px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid var(--glow-blue);
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.7rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .view-link:hover {
+            background: var(--glow-blue);
+            color: #000;
+            box-shadow: 0 0 15px var(--glow-blue);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">MINDMESH</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="activities.html">Activities</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="glow-card">
+            <h1 class="glow-text">Prototype</h1>
+            <p style="color: var(--text-white); font-size: 1.1rem; line-height: 1.8; margin-top: 20px;">
+                In the prototype phase of ChurchSearch, we developed the visual and functional blueprint of the web-based system. This stage focused on translating our technical requirements into an interactive interface, covering essential modules like the search engine, digital scanning workflow, and secure administrative archives.
+            </p>
+        </div>
+
+        <div class="canva-section">
+            <div class="canva-card">
+                <div class="link-meta">
+                    <div class="canva-icon">⚡</div>
+                    <div class="link-text">
+                        <h3>Interactive Prototype</h3>
+                        <p>View the System Design on Canva</p>
+                    </div>
+                </div>
+                <a href="YOUR_CANVA_LINK_HERE" target="_blank" class="view-link">Launch Prototype</a>
+            </div>
+        </div>
+
+        <div class="glow-card" style="margin-top: 40px;">
+            <h2 class="glow-text">Team Reflection</h2>
+            <div class="member-layout" style="align-items: flex-start; gap: 30px; display: flex;">
+                <div class="portrait-box" style="width: 250px; height: 250px; flex-shrink: 0;">
+                    <img src="reflection_team.jpg" alt="Team Reflection Image" style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+                </div>
+                <div class="member-details">
+                    <p style="color: var(--text-white); font-style: italic; font-size: 1.1rem; line-height: 1.6;">
+                        "Making a prototype was challenging for us and our handler because we struggled to clearly imagine what we wanted our system to look like and how it should function. At first, it was hard to turn our ideas into a visual design since we were not sure how everything should be arranged and presented. Through this experience, we learned how important planning and teamwork are in creating a system. Even though it was challenging, it helped us better understand how to design a more organized and user-friendly prototype."
+                    </p>
+                    <p style="margin-top: 15px; color: var(--glow-blue); font-family: 'Orbitron';">— Princess and Diana</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; padding-bottom: 60px;">
+            <a href="activities.html" class="nav-btn">← Back to Activities</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

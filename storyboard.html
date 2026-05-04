@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Board | MindMesh</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Canva Link Section Styling */
+        .canva-section {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .canva-card {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            background: rgba(10, 10, 20, 0.6);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .canva-card:hover {
+            border-color: var(--glow-blue);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .link-meta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .canva-icon {
+            font-size: 2.5rem;
+            color: var(--glow-blue);
+            filter: drop-shadow(0 0 8px var(--glow-blue));
+        }
+
+        .link-text h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .link-text p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin: 5px 0 0 0;
+        }
+
+        .view-link {
+            padding: 12px 25px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid var(--glow-blue);
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.7rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .view-link:hover {
+            background: var(--glow-blue);
+            color: #000;
+            box-shadow: 0 0 15px var(--glow-blue);
+        }
+
+        .def-box {
+            border-left: 4px solid var(--glow-blue);
+            padding-left: 20px;
+            margin: 25px 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">MINDMESH</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="activities.html">Activities</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="glow-card">
+            <h1 class="glow-text">Story Board</h1>
+            <div class="def-box">
+                <p style="color: var(--text-white); line-height: 1.6; font-size: 1.1rem;">
+                    A **Storyboard** serves as a visual blueprint for the user experience. It maps out the interaction flow between the user and the system, allowing us to visualize pain points in navigation and refine the interface for a seamless, intuitive journey from login to data retrieval.
+                </p>
+            </div>
+        </div>
+
+        <div class="canva-section">
+            <div class="canva-card">
+                <div class="link-meta">
+                    <div class="canva-icon">🎬</div>
+                    <div class="link-text">
+                        <h3>Visual Narrative</h3>
+                        <p>View the full Storyboard on Canva</p>
+                    </div>
+                </div>
+                <a href="https://canva.link/aidc55vezer4wx9" target="_blank" class="view-link">Open Canva</a>
+            </div>
+        </div>
+
+        <div class="glow-card" style="margin-top: 40px;">
+            <h2 class="glow-text">Neri's Reflection</h2>
+            <div class="member-layout" style="align-items: flex-start; gap: 30px; display: flex;">
+                <div class="portrait-box" style="width: 250px; height: 250px; flex-shrink: 0;">
+                    <img src="reflection_neri.jpg" alt="Neri's Portrait" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                </div>
+                <div class="member-details">
+                    <p style="color: var(--text-white); font-style: italic; font-size: 1.1rem; line-height: 1.6;">
+                        "Creating a storyboard helped us understand the user’s pain points, especially in how they log in and use the system. It showed us the possible struggles users may face, such as confusion in logging in, difficulty in navigating the system, or taking too much time just to access their records. By identifying these problems, we were able to think of ways to make the process simpler and more user-friendly. Through the storyboard, we also saw how important it is to design each step clearly, from logging in up to retrieving the documents."
+                    </p>
+                    <p style="margin-top: 15px; color: var(--glow-blue); font-family: 'Orbitron';">— Neri (Hipster)</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding-bottom: 60px;">
+            <a href="activities.html" class="nav-btn">← Back to Activities</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
